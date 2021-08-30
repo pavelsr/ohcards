@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Oh,cards! - Yet another cards generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" integrity="sha512-TktJbycEG5Van9KvrSHFUcYOKBroD7QCYkEe73HAutODCw9QTFcvF6fuxioYM1h6THNudK1GjVidazj6EslK4A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <a class="github-fork-ribbon" href="https://github.com/pavelsr/ohcards" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+    <div id="main_form">
+        <form>
+            
+            <label for="text">Text for each card (1 card = 1 row, max = 21 rows):</label><br>
+            <textarea rows="21" cols="45" name="text" id="text"></textarea>
+            <br>
+            
+            <label for="font_size">font-size:</label>
+            <input type="text" id="font_size" name="font_size" value="13">
+            <br>
+            
+            <label for="round_corners">round corners?</label>
+            <input type="checkbox" id="round_corners" name="round_corners">
+            <br>
+            
+            <input type="button" id="submit" value="Generate">
+            <input type="button" id="load_sample" value="Load sample and generate">
+        </form>
+    </div>
+    <div id="result">
+        <svg id="cards"></svg>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.serializeJSON/3.2.1/jquery.serializejson.min.js" integrity="sha512-SdWDXwOhhVS/wWMRlwz3wZu3O5e4lm2/vKK3oD0E5slvGFg/swCYyZmts7+6si8WeJYIUsTrT3KZWWCknSopjg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3plus-text@1.0.2"></script>
+    <script src="index.js"></script>
+</body>
+</html>
